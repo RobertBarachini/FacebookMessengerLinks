@@ -334,7 +334,7 @@ if __name__ == "__main__":
 	#
 	# Generally speaking you can set the first stage to False
 	# once you've generated a processed.json that you're happy with
-	stages = [False, True, False]
+	stages = [True, True, False]
 	if stages == [False, False, False]:
 		print("You should enable at least one of the stages 😒")
 		exit(7)
@@ -346,7 +346,7 @@ if __name__ == "__main__":
 	datetime_min = datetime.datetime(2021, 3, 18)
 	datetime_max = datetime.datetime(2021, 3, 20)
 	datetime_limits = (datetime_min, datetime_max)
-	# datetime_limits = None
+	datetime_limits = None
 
 	links_objects_youtube = None
 

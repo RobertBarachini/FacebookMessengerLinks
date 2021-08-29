@@ -1,0 +1,22 @@
+# Git
+.git/
+
+# API key
+youtube_api_key
+
+# Root folder of the archive (usually extracted Facebook archive at ...\messages\inbox)
+# Use specific inbox within ...\messages\inbox\'specific' for just a particular chat
+root_folder
+
+# All local .json files
+*.json
+
+# Old / unfinished code and files
+src/OLD/
+processed/OLD/
+
+# VS Code
+.vscode/
+
+# Web / downlaoded resources
+res/web/

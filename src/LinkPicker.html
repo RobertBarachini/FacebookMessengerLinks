@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>Choose the processed.json file and click on elements of the links that you want selected for download</h1>
+		<div class="buttonContainer">
+			<input type="file" accept="text/plain" onchange="openFile(event)"><br>
+			<button type="button" id='saveChanges' onclick="saveChanges(event)"> Save changes </button>
+			<button type="button" id='downloadButton' onclick="downloadClick(event)"> Download </button>
+		</div>
+		<div class="centerStuff">
+			<div id="pageControls">
+				<!-- Had to rotate it because there is no matching symbol for 'black rightwards arrowhead' -->
+				<button type="button" id='buttonLeft' onclick="changePage(event)" style="transform: rotate(180deg);"> ➤ </button>
+				<div id="pageStatus">?</div>
+				<button type="button" id="buttonRight" onclick="changePage(event)"> ➤ </button>
+			</div>
+		</div>
+		<!-- Objects get inserted into 'linksContainer' -->
+		<div id="linksContainer"></div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script type="text/javascript" src="LinkPicker.js"></script>
+	</body>
+</html>

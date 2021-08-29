@@ -1,0 +1,159 @@
+:root {
+	/* Colors */
+	--color-background-primary: #23262E;
+	--color-background-secondary: #2F323D;
+	--color-text-main: #4FE7C5;
+	--color-text-secondary: #D0CED9;
+	--color-selected: var(--color-text-main);
+	--color-deselected: #e76d4f;
+
+	/* Values */
+	--border-radius: 5px;
+}
+
+* {
+	font-family: "Helvetica", "Open Sans";
+	color: var(--color-text-main);
+}
+
+body {
+	background-color: var(--color-background-primary);
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.3em;
+}
+
+h1 {
+	font-size: 1.5em;
+	padding: 0.5em 0;
+	margin: 0.5em;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.container {
+	margin: 1em;
+	font-size: 1.2em;
+	border-radius: var(--border-radius);
+	background-color: var(--color-background-secondary);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+}
+
+.container * {
+	margin: 0.5em;
+}
+
+.centerStuff {
+	display: flex;
+	justify-content: center;
+}
+
+.buttonContainer {
+	display: flex;
+	margin: 0.5em;
+}
+
+#pageStatus {
+	font-size: 1.2em;
+}
+
+#pageControls {
+	display: flex;
+	align-items: center;
+	justify-self: center;	
+}
+
+button {
+	background-color: var(--color-background-secondary);
+	border: 1px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	padding: 0.75em;
+	margin: 0.5em;
+	border-radius: var(--border-radius);
+	border-color: var(--color-text-main);
+	float: left;
+}
+
+button:hover {
+  background-color: #555555;
+}
+
+
+input[type=file] {
+	background-color: var(--color-background-secondary);
+	border: 1px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	padding: 0.75em;
+	margin: 0.5em;
+	border-radius: var(--border-radius);
+	border-color: var(--color-text-main);
+}
+
+input:hover {
+  background-color: #555555;
+}
+
+.containerData {
+	padding: 1em;
+	margin: 0em;
+	left: 0;
+	background-color: "green";
+	flex: 1;
+}
+
+span {
+	color: var(--color-text-secondary);
+}
+
+.selectedIndicator {
+	margin: 0em;
+	background-color: var(--color-text-main);
+	width: 35px;
+	border-top-left-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
+	cursor: pointer;
+}
+
+.selected {
+	background-color: var(--color-selected);
+}
+
+.deselected {
+	background-color: var(--color-deselected);
+}
+
+.containerDataInner {
+	display: flex;
+	margin: 0em;
+
+}
+
+.containerDataInnerLeft {
+	margin-bottom: 0em;
+}
+
+.containerDataInnerLeft * {
+	margin-bottom: 0em;
+}
+
+.containerDataInnerRight {
+	flex: 1;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+	width: 5em;
+}

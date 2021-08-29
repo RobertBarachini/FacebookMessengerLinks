@@ -2,7 +2,7 @@
 
 Ever wanted to view old `YouTube` videos and songs you shared with your friends via `Facebook Messenger` over the years but don't know how? Well you're in luck as this script / utility allows you to do just that and with ease (relatively speaking of course). Just follow the instructions and you should be able to browse a dynamically generated site, containing the `YouTube links` 🔗 (`chronologically sorted`, with `thumbnails` 🖼️ and other data as well) in no time (waiting for the `Facebook archive` to be ready for download can take a couple of days though)! 
 
-# Usage / instructions
+# Instructions
 
 0. Download a copy of your `Facebook data` (in `JSON` format). 
 1. Obtain a `YouTube Data API v3` key and put it into a file named `youtube_api_key` in the project root.
@@ -11,7 +11,7 @@ Ever wanted to view old `YouTube` videos and songs you shared with your friends 
 4. Open the `LinkPicker.html` file in your browser of choice (originally tested with Google Chrome).
 5. Click the `Choose File` button and choose the `processed_youtubedata_thumbnails.json` file.
 
-# Tips
+# Usage and tips
 
 ## So many links!
 

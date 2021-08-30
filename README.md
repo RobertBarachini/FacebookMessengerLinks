@@ -7,7 +7,7 @@ Ever wanted to view old `YouTube` videos and songs you shared with your friends 
 0. Download a copy of your `Facebook data` (in `JSON` format). 
 1. Obtain a `YouTube Data API v3` key and put it into a file named `youtube_api_key` in the project root.
 2. Enter the path to your Facebook data archives into a file named `root_folder` in the project root. Recommended path within the unzipped archive: `...\messages\inbox`.
-3. Run `LinksParser.py` (located in `src`) - if all goes well, a file named `processed_youtubedata_thumbnails.json` will be generated in the `processed` directory.
+3. Run `python src/LinksParser.py` (located in `src`) - if all goes well, a file named `processed_youtubedata_thumbnails.json` will be generated in the `processed` directory.
 4. Open the `LinkPicker.html` file in your browser of choice (originally tested with Google Chrome).
 5. Click the `Choose File` button and choose the `processed_youtubedata_thumbnails.json` file.
 
